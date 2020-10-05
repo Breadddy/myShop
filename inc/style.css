@@ -1,0 +1,325 @@
+@charset "utf-8";
+#nav {                      /* блок навигации */
+	position: absolute;
+	top: 5em;
+	left: 1em;
+	width: 14em;
+}
+#nav ul {                   /* список пунктов меню */
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 0;
+}
+#nav li {
+	font-size: 150%;
+	margin-bottom: 0.3em;
+}
+#nav a:link, #nav a:visited {   /* ссылки на пункты меню */
+	text-decoration: none;
+	color: #040b6b;
+	background-color: transparent;
+}
+#nav h2 {                           /* заголовок меню */
+	font: 170% Georgia, "Times New Roman", Times, serif;
+	color: #003af7;
+	background-color: transparent;
+    border-bottom: 1px dotted #cccccc;
+    margin-top: 30px;
+}
+#content {     
+	padding-top: 100;                     /* отступ для основного контента */
+	margin-left: 16em;
+	margin-right: 2em;
+	text-align: justify;
+}
+#user{                              /* правый верхний блок для ссылок на регистрацию и вход */
+    float:left;
+    width:15%;
+    text-align: left;
+	height:70px;
+}
+#basket{									/* блок, в который встраивается картинка корзины */
+	float:left;
+	width:10%;
+	height:70px;
+}
+#title{                             /* серединный верхний блок с заголовком */
+    float:left;
+	width: 55%;
+	height:70px;
+}
+#title h1 {							 /* заголовок посередине сверху */
+	font: 170% Helvetica;
+	text-align: center;
+	color: #003af7;
+}
+#user a:link, #user a:visited, #user p       /* ссылки зарегистрироваться и вход */
+{
+    font-size: 20;
+    color: rgb(179, 11, 11);
+	text-decoration: none;
+	line-height: 1.5;
+}
+#logo{                          /* блок, в который встраивается лого */
+    float:left;
+	width:20%;
+	height:70px;
+}
+#logo img, #ImageBlock img, #basket img, #BasketImageBlock img, #thanksForOrder img{                      /* встравивание картинки лого в блок */
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    float:left;
+}
+#imageBlock {        /* блок с картинкой товара в каталоге */
+    width: 20%;
+    height: 300px;
+    float: left;  
+  }
+#basketImageBlock{
+	width: 20%;
+    height: 100px;
+    float: left;  
+}
+#basketDescription{
+	float: left;
+    width: 80%;
+	height: 100px;
+	margin-bottom: 2em;
+}
+#description{       /* блок краткого описания товара */
+    float: left;
+    width: 80%;
+	height: 250px; 
+	overflow-x:hidden;
+	margin-bottom: 15px;
+}
+#editProductName{
+	font-size: 20;
+	width: 620px;
+}
+#editDescription{	/* изменение описания товара, админка */
+	float: left;
+    width: 80%;
+    height: 200px;
+}
+#underDescription{		/* блок под описанием товара, с ценой и наличием */
+	float: left;
+	width: 80%;
+	height:100px;
+	margin-bottom: 2em;
+}
+#leftUnder{					
+	float: left;
+	width: 20%;
+}
+#rightUnder{
+	float:left;
+	width: 80%;
+}
+#rightUnder button{				/* кнопка добавить в корзину и кнопки +/- в корзине*/
+	font-size: 23;
+	border-radius: 5px;
+	color: #003af7;
+	background-color: snow;
+}
+#rightUnder button:hover{				/* кнопка изменяется при наведении мыши */
+	background-color: #003af7;
+	color: white;
+}
+#quantity{					/* блок количества товара в корзине */
+	padding-right: 100;
+}
+#quantity button{			/* кнопки увеличения/уменьшения количества товара в корзине */
+	font-size: 20;
+	color: black;
+	border: 1px solid;
+}
+#summ{								/* надпись "Итого: ?р" в корзине */
+	/* padding-right: 700; */
+	font-size: 25;
+	font-weight: 500;
+	text-align: left;
+}
+#createOrder{				/* кнопка оформить заказ */
+	font-size: 25;
+	font-weight: bold;
+	font-size: 23;
+	color: white;
+	background-color: Dodgerblue;
+	text-align: center;
+	/* border: 4px solid; */
+	/* border-color: darkblue; */
+	border-radius: 10px;
+	margin-left: 300;
+}
+#createOrder:disabled{				
+	background-color: grey;
+}
+#createorder:enabled:hover{
+	color: Dodgerblue;
+	background-color: white ;
+}
+#descr{						/* текст краткого описания товара */
+	padding-left: 20; 
+ 	line-height: 1.2;
+	font-size: 23;
+	/* text-indent: 15;  */
+} 
+#available{                             /* надпись есть в наличии */
+    margin-left: 1em;
+    font-style: italic;
+	font-weight: normal;
+	font-size: 20;
+	margin-bottom: 2px;
+	margin-top: 4px;
+}
+#price{                     /* цена товара на странице каталога */
+    margin-left: 1em;
+	font-weight: bold;
+	font-size: 20;
+}
+#logIn input, #signUp input{
+	border-radius: 5px;
+	font-size: 22px;
+	margin-bottom: 25;
+  }
+#logIn form, #signUp form{
+	text-align: center; 
+	margin-right: 150px;}
+#logIn	button, #signUp button{
+		font-size: 25px;
+		font-weight: 600;
+		background-color: white;
+	}
+#signUp h3{
+	text-align: center;
+	margin-right: 200;
+}
+#logIn textarea {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+#description button
+{
+	font-size: 20px;
+	font-weight: 600;
+	margin-left:400px;
+}
+#pageNumber						/* блок для номера страницы */
+{
+	text-align: center;
+	padding-bottom: 60;
+}
+#pageNumber a:link, #pageNumber a:visited
+{
+	font-size: 30px;
+	color: #003af7;
+	margin-left:10;
+}
+#pageNumber a:hover{
+	text-decoration: none;
+    color: rgb(179, 11, 11);
+}
+#inputNames{			/* блок названий полей ввода данных заказчика - ФИО, мыло, телефон */
+	float: left;
+	width:15%;
+	height:270px;
+	font-size: 30px;
+	line-height: 1.6;
+}
+#orderInputs{		/* блок полей ввода ФИО, мыло, телефон на странице заказа */
+	float:left;
+	width:85%;
+	height:270px;
+}
+#orderInputs input, #orderInputs2 input, #personalOrderInputs2 input{	/* поля ввода ввода ФИО, мыло, телефон на странице заказа */
+	border-radius: 2px;
+	font-size: 22px;
+	margin-top:13;
+}	
+#enteringOrder {							/* надпись вверху страницы заказа */
+	font-style: italic;
+	font-size: 19;
+}
+#inputNames h6{								/* поле примера телефона(мелкий текст) */
+	font-weight: normal;
+	font-size:15;
+	text-align: left;
+	margin-top:0;
+	line-height: 1;
+}
+#orderHeader{							/* подзаголовки на странице заказа */
+	margin:0;
+}
+#inputNames2{			/* блок названий полей ввода адреса на странице заказа */
+	float: left;
+	width:20%;
+	height:300px;
+	font-size: 30px;
+	line-height: 1.6;
+	text-align: left;
+}
+#personalInputNames2{
+	float: left;
+	width:20%;
+	height:150px;
+	font-size: 30px;
+	line-height: 1.6;
+	text-align: left;
+}
+#inputNames2 h6, #personalInputNames2 h6{				/* двухстрочные названия полей ввода адреса на странице заказа */
+	font-weight: normal;
+	line-height: 1;
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 29;
+}
+#personalOrderInputs2
+{
+	float:left;
+	width:80%;
+	height:150px;
+}
+#orderInputs2{			/* блок полей ввода адреса на странице заказа */
+	float:left;
+	width:80%;
+	height:300px;
+}
+#thanksForOrder{			/* блок для картинки спасибо за заказ */
+	width:80%;
+	height: 600;
+}
+#thanksForOrder h1{			/* надпись ваш номер заказа на странице благодарения */
+	text-align: center;
+}
+#orderInformation{			/* информация о заказах в админке */
+	font-size: 20;
+}
+#sortOrders a{				/* ссылки для отображения всех/актуальных/кому звонить заказов  в админке*/
+	margin-left:20;
+	font-size: 20;
+	color: blue;
+}
+#MenuPersonal{					/* меню в личном кабинете */
+	float:left;
+	width:20%;
+	background: blue;
+	border-radius: 20px 20px 50px 50px;;
+	border-color: red;
+	border-width: 12;
+	margin-left:10;
+	text-align: center;
+}
+#MenuPersonal a, #MenuPersonal a:visited {		/* ссылки в меню личного кабинета */
+	color:white;
+	text-decoration: none;
+	font-size: 25px;
+}
+#test{
+	height: 200;
+}
+#secret{
+	cursor: pointer;
+}
