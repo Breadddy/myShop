@@ -73,7 +73,8 @@ foreach($goods as $item)
     </div>
     <div id="basketDescription">
         <div id="leftUnder">
-                <div id="price"> <?=$item['price']?> р.</div>
+                <div id="price"> <?=$item['price']?> р.<br><br>
+                <?=$item['quantity']?>шт.</div>
         </div>
     </div>
  <?php }?>

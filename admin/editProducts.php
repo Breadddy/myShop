@@ -3,6 +3,7 @@
 <script type="text/javascript"> ; //подключаем визуальный редактор текста 
 bkLib.onDomLoaded(function() {nicEditors.allTextAreas(({maxHeight : 150, buttonList : ['save','bold','italic','underline','left','center','right','justify','ol','ul','fontSize','fontFamily','fontFormat','indent','outdent','forecolor','bgcolor','hr','subscript','superscript','removeformat'] }))}); 
  //устанавливаем, какие кнопки визуального редактора нам нужны </script>  
+ <br>
 <?php
     require_once "../inc/class.inc.php"; 
     require_once "secure.inc.php";

@@ -10,5 +10,5 @@ $id=$_GET['updatingId'];
 if($minimarket->updateProduct($name, $description, $price, $available, $id))
 if(isset($_FILES['image']))
     $minimarket->receiveImage2($id);
-header("Location: admin.php?id=editproducts");
+header("Location: {$_SERVER['HTTP_REFERER']}");
 }
