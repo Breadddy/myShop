@@ -18,6 +18,6 @@ switch($id){
 		case 'createorder': $title="Оформление нового заказа"; break;
 		case 'thanksfororder': $title=''; break;
 		case 'personal': $title='Личный кабинет'; break;
-		default: $title="Главная страница"; break;
+		default: $title="Каталог товаров"; break;
 	}	
 echo "<head> <title> $title </title> </head>";

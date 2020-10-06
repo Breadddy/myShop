@@ -11,7 +11,10 @@ else
 <?php 
 if (isset($_SESSION['loggedUser']))
 {
-    echo '<p>Добро пожаловать, <a href="index.php?id=personal"><u>'.$_SESSION['loggedUser']['login'].'</u></a><br>';
+    if(($_SESSION['loggedUser']['login']=='admin')&&($_SERVER["SCRIPT_NAME"]=="/admin/admin.php"))
+        echo '<p>Добро пожаловать, '.$_SESSION['loggedUser']['login'].'<br>';
+    else
+        echo '<p>Добро пожаловать, <a href="index.php?id=personal"><u>'.$_SESSION['loggedUser']['login'].'</u></a><br>';
     echo "<a href='../index.php?id=logout&ref=$id'>Выйти</a><br></p>";
 }
 else

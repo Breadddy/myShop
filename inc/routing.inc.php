@@ -5,6 +5,7 @@ switch($id){
 	case 'editproducts': include '../admin/editProducts.php'; break;
 	case 'addproducts': include '../admin/addProducts.php'; break;
 	case 'showorders': include '../admin/showOrders.php'; break;
+	default: include 'adminIndex.inc.php';
 }
 else
 switch($id){
@@ -18,5 +19,5 @@ switch($id){
 	case 'createorder': include 'enterInformation.php'; break;
 	case 'thanksfororder': include 'thanksForOrder.php'; break;
 	case 'personal': include 'inc/personal.inc.php'; break;
-	default: include 'index.inc.php';
+	default: include 'showCatalog.php';
 }	

@@ -320,6 +320,9 @@
 #test{
 	height: 200;
 }
-#secret{
+#secret{							/* details для тайны */
 	cursor: pointer;
+}
+#answers{
+	font-size: 23;
 }

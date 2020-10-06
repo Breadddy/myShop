@@ -26,7 +26,6 @@ ob_flush();?>
         <!-- Навигация -->
         <h2>Меню</h2>
         <ul>
-            <li><a href='index.php'>Главная</a></li>
             <li><a href='index.php?id=catalog'>Каталог товаров</a></li>
             <li><a href='index.php?id=payDeliver'>Доставка и оплата</a></li>
             <li><a href='index.php?id=about'>О нас</a></li>
