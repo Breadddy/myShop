@@ -24,6 +24,6 @@ else
 </div>
 <div id="basket">
     <?php if(!((isset($_SESSION['loggedUser'])) && ($_SESSION['loggedUser']['login']=='admin')))	//если залогинился пользователь
-    echo '<a href="index.php?id=basket"><img src="../images/basketImage.php"></div></a>';?>
+    include 'basketCount.html'?>
 </div>
     

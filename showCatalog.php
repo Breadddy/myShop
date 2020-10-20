@@ -1,6 +1,10 @@
 <link rel="stylesheet" href="inc/style.css">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
 <?php
     //require_once "./inc/class.inc.php"; 
+    include 'addingToBasket.js';
     if(isset($_GET['firstitem']))
         $products = $minimarket->selectFirstNProducts($_GET['firstitem'],10);
     else
@@ -31,7 +35,7 @@
                 <div id="price"> <?=$item['price']?> р.</div>
         </div>
         <div id="rightUnder"> 
-    <form action="addingToBasket.php" method="POST"> 
+    <form class="addingToBasket" method="POST"> 
         <input type="hidden" name=productId value=<?=$item['id']?>>
         <button type="submit">Добавить в корзину</button>
     </form>
@@ -50,6 +54,7 @@ for($i=0;$i<$k;$i++)
 ?>
     </div>
 <br><br><br>
+
 
 
 

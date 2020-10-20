@@ -14,7 +14,7 @@ else
         $basket[$_POST['productId']] = 1; 
     saveBasket();
 }
-header("Location: {$_SERVER['HTTP_REFERER']}");
+echo json_encode(array('success' => 1));
 function saveBasket()
 {
     $basket = base64_encode(serialize($GLOBALS['basket']));
